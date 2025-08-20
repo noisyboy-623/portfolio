@@ -8,4 +8,4 @@ It’s designed with a clean and modern UI to give recruiters and collaborators 
 
 ## 📫 Contact
 - Email: tejas.shekhar.614@gmail.com  
-- LinkedIn: [linkedin.com/in/tejas-h-shekhar](#)  
+- LinkedIn: [linkedin.com/in/tejas-shekhar-39a721250] 
