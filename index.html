@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tejas H Shekhar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.15/build/spline-viewer.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
+  <span style="font-size: 1.5rem; color: white;">☰</span>
+</div>
+
+
+      <div class="logo">Tejas H Shekhar</div>
+      
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+        
+      </label>
+      
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-fullscreen">
+    <div id="spline-hero" class="spline-wrapper"></div>
+    <div class="hero-overlay">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Hi, I'm Tejas H S</h1>
+        <p class="subheadline">Aspiring Software Engineer | AI & Game Development Enthusiast | Designer</p>
+      <p class="description">
+        I'm passionate about building smart, interactive digital experiences — from AI-driven tools to immersive web apps. Currently diving deep into full stack development, creative tech, and everything in between.
+      </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="cta-button">View Projects</a>
+          <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up" data-aos-delay="400">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <ul class="about-points">
+            <li>Final-year B.E. Information Science student at <strong>JSSATE, Bengaluru</strong></li>
+            <li>Passionate about <strong>AI</strong>, <strong>Game Dev</strong>, and <strong>Full Stack Development</strong></li>
+            <li>Creative thinker blending tech, design & storytelling</li>                
+            <li>Curious explorer — I love diving into new ideas and technologies</li>
+            <li>A curious traveler inspired by architecture, culture, and nature</li>
+          </ul>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <div class="skill-badges">
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <div class="skill-badges">
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <div class="skill-badges">
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Java</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Databases</h3>
+              <div class="skill-badges">
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Figma</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="about-visual">
+          <div id="spline-about" class="spline-background-about"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="projects-intro">
+                <h2>My Projects</h2>
+                <p>A showcase of my recent works </p>
+            </div>
+            
+            <ul class="projects-list">
+                <li data-active="true">
+                    <article>
+                        <h3>Food Ordering App (frontend)</h3>
+                        <p>Responsive landing page for a food delivery service, featuring modern UI, smooth navigation, and interactive elements built with HTML, CSS, and JavaScript.</p>
+                        <a href="https://omnifood-fnd.netlify.app/"><span>> View Project</span></a>
+                        <img src="./Resources/Projects/Food_app.png" alt="Food app">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Blockchain Project</h3>
+                        <p>Decentralized application to track product movement from source to destination using smart contracts, ensuring transparency and authenticity across the supply chain.</p>
+                        <a href="#"><span>> View Project</span></a>
+                        <img src="https://picsum.photos/400/300?random=4" alt="Blockchain Project">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>To-Do List App</h3>
+                        <p>Task management app with priority-based editing, deletion alerts, and responsive UI built using EJS, Express, and MongoDB.</p>
+                        <a href="https://to-do-list-omdn.onrender.com"><span>> View Project</span></a>
+                        <img src="./Resources/Projects/To-Do list.png" alt="To-Do List App">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Secrets Sharing App</h3>
+                        <p>Secure secret-sharing platform with encrypted storage, user authentication, and dark-themed interactive UI using Express, EJS, and Mongoose Encryption.</p>
+                        <a href="https://secrets-project-vgk8.onrender.com/"><span>> View Project</span></a>
+                        <img src="./Resources/Projects/Whisper_app.png" alt="Secret Sharing App">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>AI Resume Analyzer & Job Matcher</h3>
+                        <p>Streamlit-based web app that analyzes resumes using AI to match candidates with relevant job roles, offering insights and downloadable reports.</p>
+                        <a href="#"><span>> View Project</span></a>
+                        <img src="./Resources/Projects/AI resume analyzer.png" alt="AI Resume Analyzer">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Social Media Platform</h3>
+                        <p>Modern social networking platform with real-time messaging, content sharing, and advanced privacy controls.</p>
+                        <a href="#"><span>> View Project</span></a>
+                        <img src="https://picsum.photos/400/300?random=6" alt="Social Media Platform">
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>AI Chat Interface</h3>
+                        <p>Intelligent chat interface with natural language processing, contextual responses, and seamless user interaction design.</p>
+                        <a href="#"><span>> View Project</span></a>
+                        <img src="https://picsum.photos/400/300?random=7" alt="AI Chat Interface">
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+
+    <section id="achievements" >
+            <h1 class="section-title">ACHIEVEMENTS</h1>
+
+    <div class="carousel-container">
+        <button class="nav-arrow left">‹</button>
+        <div class="carousel-track">
+            <div class="card" data-index="0">
+                <img class="card-image" src="./Resources/Achievements/AIML.png" alt="AI/ML Training Course">
+                <div class="card-overlay">
+                    <div class="overlay-title">AI/ML Training Course</div>
+                    <div class="overlay-org">Infosys Springboard – Dec 2024</div>
+                </div>
+            </div>
+            
+            <div class="card" data-index="1">
+                <img class="card-image" src="./Resources/Achievements/DSA.png" alt="Data Structures and Algorithms">
+                <div class="card-overlay">
+                    <div class="overlay-title">Data Structures and Algorithms</div>
+                    <div class="overlay-org">Infosys Springboard – Aug 2024</div>
+                </div>
+            </div>
+
+            <div class="card" data-index="2">
+                <img class="card-image" src="./Resources/Achievements/AWS (forage).png" alt="AWS Cloud Job Simulation">
+                <div class="card-overlay">
+                    <div class="overlay-title">AWS Cloud Job Simulation</div>
+                    <div class="overlay-org">Forage (with AWS) – Jan 2025</div>
+                </div>
+            </div>
+
+            <div class="card" data-index="3">
+                <img class="card-image" src="./Resources/Achievements/Cloud with AWS.png" alt="Learn Cloud Computing with AWS">
+                <div class="card-overlay">
+                    <div class="overlay-title">Learn Cloud Computing with AWS</div>
+                    <div class="overlay-org">DevTown – June 2023</div>
+                </div>
+            </div>
+
+            <div class="card" data-index="4">
+                <img class="card-image" src="./Resources/Achievements/Pyth with AI.png" alt="Python Using AI Workshop">
+                <div class="card-overlay">
+                    <div class="overlay-title">Python Using AI Workshop</div>
+                    <div class="overlay-org">AI FOR TECHIES – Feb 2025</div>
+                </div>
+            </div>
+
+            <div class="card" data-index="5">
+                <img class="card-image" src="./Resources/Achievements/Figma.png" alt="Figma Bootcamp">
+                <div class="card-overlay">
+                    <div class="overlay-title">Figma Bootcamp</div>
+                    <div class="overlay-org">LetsUpgrade – Mar 2025</div>
+                </div>
+            </div>
+            <div class="card" data-index="6">
+                <img class="card-image" src="./Resources/Achievements/IIT MADRAS.png" alt="Strategy Formulation and Data Visualization">
+                <div class="card-overlay">
+                    <div class="overlay-title">Strategy Formulation and Data Visualization</div>
+                    <div class="overlay-org">IIT Madras – July 2023</div>
+                </div>
+            </div>
+            <div class="card" data-index="7">
+                <img class="card-image" src="./Resources/Achievements/CISCO.png" alt="Networking Basics">
+                <div class="card-overlay">
+                    <div class="overlay-title">Networking Basics</div>
+                    <div class="overlay-org">Cisco Networking Academy – Dec 2024</div>
+                </div>
+            </div>
+            <div class="card" data-index="8">
+                <img class="card-image" src="./Resources/Achievements/Packet Tracer.png" alt="Hands-on Tutorial on Cisco Packet Tracer">
+                <div class="card-overlay">
+                    <div class="overlay-title">Hands-on Tutorial on Cisco Packet Tracer</div>
+                    <div class="overlay-org">JSS Academy – Dec 2024</div>
+                </div>
+            </div>
+            <div class="card" data-index="9">
+                <img class="card-image" src="./Resources/Achievements/CODEATHON.png" alt="CODEATHON – Phase Shift 2023">
+                <div class="card-overlay">
+                    <div class="overlay-title">CODEATHON – Phase Shift 2023</div>
+                    <div class="overlay-org">B.M.S. College of Engineering – 2023</div>
+                </div>
+            </div>
+            <div class="card" data-index="10">
+                <img class="card-image" src="./Resources/Achievements/NSS.png" alt="Poster-Making Competition">
+                <div class="card-overlay">
+                    <div class="overlay-title">Poster-Making Competition – International Yoga Day 2024</div>
+                    <div class="overlay-org">JSS Academy – 2024</div>
+                </div>
+            </div>
+        </div>
+        <button class="nav-arrow right">›</button>
+        <div class="achievement-info">
+            <h2 class="achievement-name">AWS Certified Soluions Architect</h2>
+            <p class="achievement-org">Completed a comprehensive training course in AI and ML, gaining knowledge of key concepts, algorithms, and applications.</p>
+        </div>
+        <div class="dots">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
+            <div class="dot" data-index="6"></div>
+            <div class="dot" data-index="7"></div>
+            <div class="dot" data-index="8"></div>
+            <div class="dot" data-index="9"></div>  
+            <div class="dot" data-index="10"></div>
+        </div>
+    </div>
+
+    
+
+    
+    </section>
+
+            <!-- Experience Section -->
+<section id="experience" class="experience-section">
+  <h2 class="section-title">Experience</h2>
+  <div class="experience-container">
+    
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3>Data Analytics Using AI-LLMs Internship</h3>
+        <span class="duration">October 2024 - Novemer 2024</span>
+      </div>
+      <p class="company">AICTE & VOIS for Tech Program</p>
+      <p class="experience-description">
+       Gained hands-on experience in AI-driven data analysis using LLMs, working on real-world datasets and decision support projects.
+      </p> 
+    </div>
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3> Java Full Stack Development Intern </h3>
+        <span class="duration">March 2025 - May 2025</span>
+      </div>
+      <p class="company"> Dyashin Technosoft Pvt. Ltd.</p>
+      <p class="experience-description">
+        Gained hands-on experience in Java Full Stack development by building real-world applications and collaborating on end-to-end project implementation.
+      </p> 
+    </div>
+    <div class="experience-card">
+      <div class="experience-header">
+        <h3> Software Development Intern </h3>
+        <span class="duration">August 2025 - Present</span>
+      </div>
+      <p class="company"> PreSecure Solutions</p>
+      <p class="experience-description">
+        Currently working as a Software Development Intern, focusing on developing and maintaining software solutions, enhancing system performance, and collaborating with cross-functional teams.
+      </p> 
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+  <div class="container contact-container">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>
+        I'm currently open to internships, full-time roles, and collaboration opportunities.  
+        Feel free to reach out through any of the platforms below.
+      </p>
+
+      <!-- Icon Buttons -->
+      <div class="contact-icons">
+        <a href="mailto:tejas.shekhar.614@email.com" class="icon-button" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tejas-shekhar-39a721250" target="_blank" class="icon-button" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/noisyboy-623" target="_blank" class="icon-button" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/tejas_shekhar_/profilecard/?igsh=Ynk5Z2ljaTNkN3B3" target="_blank" class="icon-button" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="./Resume Cognizent.pdf" target="_blank" class="icon-button" title="View Resume">
+          <i class="fas fa-file-alt"></i>
+        </a>
+      </div>
+
+      
+
+      <form action="https://formspree.io/f/mdkzjyqv" method="POST" class="contact-form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" required />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="cta-button">Send Message</button>
+</form>
+
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tejas H S. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: false });
+  </script>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
