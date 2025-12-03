@@ -136,39 +136,38 @@
         const rightArrow = document.querySelector(".nav-arrow.right");
 
         // Enhanced tilt effect
-        function addTiltEffect() {
-            cards.forEach(card => {
-                card.addEventListener('mousemove', (e) => {
-                    if (!card.classList.contains('center')) return;
-                    
-                    const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    
-                    const rotateX = (y - centerY) / centerY * -8;
-                    const rotateY = (x - centerX) / centerX * 8;
-                    
-                    // Calculate gradient angle based on mouse position
-                    const gradientAngle = Math.atan2(y - centerY, x - centerX) * 180 / Math.PI + 90;
-                    
-                    card.style.setProperty('--gradient-angle', `${gradientAngle}deg`);
-                    card.style.transform = `scale(1.05) translateZ(0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-                    card.style.transition = 'transform 0.1s ease-out';
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    if (!card.classList.contains('center')) return;
-                    
-                    card.style.transition = 'transform 0.8s cubic-bezier(0.23, 1, 0.320, 1)';
-                    card.style.transform = 'scale(1.05) translateZ(0) rotateX(0deg) rotateY(0deg)';
-                    card.style.setProperty('--gradient-angle', '135deg');
-                });
-            });
-        }
+                function addTiltEffect() {
+  // Initialize VanillaTilt only once for all cards
+  VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+  max: 10,                 // smaller tilt angle → gentler movement
+  speed: 600,              // smooth transition speed
+  perspective: 1200,       // higher = softer 3D depth
+  scale: 1.03,             // mild zoom on hover
+  glare: false,            // disabled shine since you're skipping it
+  easing: "cubic-bezier(.03,.98,.52,.99)", // smooth easing
+  gyroscope: true,         // responds to device tilt (mobile)
+  // reverse: true
+});
 
+
+
+  cards.forEach(card => {
+    // Remove tilt effect for non-center cards
+    card.addEventListener('mousemove', () => {
+      if (!card.classList.contains('center')) {
+        card.vanillaTilt.destroy(); // disable tilt for non-center
+      }
+    });
+
+    card.addEventListener('mouseleave', () => {
+      if (!card.classList.contains('center')) return;
+
+      card.style.transition = 'transform 0.8s cubic-bezier(0.23, 1, 0.320, 1)';
+      card.style.transform = 'scale(1) translateZ(0) rotateX(0deg) rotateY(0deg)';
+      card.style.setProperty('--gradient-angle', '135deg');
+    });
+  });
+}
         function updateCarousel(newIndex) {
             if (isAnimating) return;
             isAnimating = true;
