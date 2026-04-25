@@ -512,10 +512,8 @@ function loadGSAP() {
     entries.forEach(entry => {
       if (entry.isIntersecting && !splineLoaded) {
         splineInAbout.innerHTML = `
-          <spline-viewer 
-            class="spline-background"
-            url="https://prod.spline.design/0Na5g5yIg6nroc3B/scene.splinecode">
-          </spline-viewer>`;
+          
+          <spline-viewer class="spline-background" url="https://prod.spline.design/ol8w1SOj9eYjpnPk/scene.splinecode"></spline-viewer>;`
         splineLoaded = true;
       } else if (!entry.isIntersecting && splineLoaded) {
         splineInAbout.innerHTML = ''; // Unload to free GPU
@@ -525,6 +523,11 @@ function loadGSAP() {
   }, { threshold: 0.1 });
 
   aboutObserver.observe(document.querySelector('#about'));
+
+{/* <spline-viewer 
+            class="spline-background"
+            url="https://prod.spline.design/0Na5g5yIg6nroc3B/scene.splinecode">
+          </spline-viewer>; */}
 
   // Uncomment the following lines if you want to implement a custom cursor
   // const dot = document.querySelector('.cursor-dot');
